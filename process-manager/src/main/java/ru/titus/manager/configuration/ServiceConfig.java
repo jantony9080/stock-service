@@ -5,6 +5,7 @@ import model.Amount;
 import model.Stock;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.bind.annotation.ModelAttribute;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,5 +25,6 @@ public class ServiceConfig {
         stocks.add(new Stock(7,"titus", new Amount(4 )));
         return stocks;
     }
+
 
 }

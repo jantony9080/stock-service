@@ -20,15 +20,6 @@ public class StockController {
         return newStock;
     }
 
-    @ModelAttribute("stocks")
-    public List<Stock> createStocksList() {
-        List<Stock> stocks = new ArrayList<Stock>();
-        stocks.add(new Stock(1,"titus", new Amount(4 )));
-        stocks.add(new Stock(2,"ivey",new Amount(5 )));
-        stocks.add(new Stock(3,"branson",new Amount(6 )));
-        return stocks;
-    }
-
     @Autowired
     private List<Stock> stocks;
 
