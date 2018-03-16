@@ -1,0 +1,4 @@
+rootProject.name = 'stock-service'
+include 'data-model'
+include 'process-manager'
+

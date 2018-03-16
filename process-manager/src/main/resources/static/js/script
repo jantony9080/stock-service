@@ -1,0 +1,22 @@
+var app = angular.module("computer", ["ngRoute"]);
+
+
+app.config(['$routeProvider', function($routeProvider) {
+    $routeProvider.
+    when('/main', {
+        templateUrl: 'main2.html',
+        controller: 'MainCtrl'
+    }).
+    when('/makepps/setLLCParams', {
+        templateUrl: 'main2.html',
+    }).
+    when('/chat', {
+        templateUrl: 'login2.html',
+    })
+
+}])
+
+
+app.controller('MainCtrl', [function() {
+    console.log('this is mainctrl');
+}]);
