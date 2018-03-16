@@ -1,4 +1,4 @@
-group 'ru.titus.manager'
+group 'ru.titus'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
@@ -6,7 +6,7 @@ apply plugin: 'war'
 apply plugin: 'idea'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'org.springframework.boot'
-apply plugin : 'application'
+apply plugin: 'application'
 
 sourceCompatibility = 1.8
 

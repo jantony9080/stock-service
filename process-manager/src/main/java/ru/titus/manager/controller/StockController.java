@@ -42,7 +42,7 @@ public class StockController {
     }
 
     @RequestMapping("/api/stocks/{id}")
-    public ModelAndView getStock(@PathVariable Number id, @ModelAttribute("stocks") List<Stock> stocks) {
+    public ModelAndView getStock(@PathVariable Number id) {
         List<Stock> filterStocks = new ArrayList<Stock>();
         for(Stock stock:stocks){
             if (stock.getId().intValue()==id.intValue())
