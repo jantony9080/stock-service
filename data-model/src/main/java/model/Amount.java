@@ -4,6 +4,8 @@ public class Amount {
 
     public float usd;
 
+    public Amount(){}
+
     public Amount(float usd){
         this.usd=usd;
     }

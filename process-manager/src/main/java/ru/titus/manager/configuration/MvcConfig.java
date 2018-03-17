@@ -17,7 +17,6 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import javax.xml.bind.annotation.W3CDomHandler;
 import java.util.Locale;
 
-
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {
 

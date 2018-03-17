@@ -14,7 +14,7 @@ import java.util.List;
 public class ServiceConfig {
 
     @Bean
-    public List<Stock> createStocksList() {
+    public List<Stock> stocks() {
         List<Stock> stocks = new ArrayList<Stock>();
         stocks.add(new Stock(1,"titus", new Amount(3 )));
         stocks.add(new Stock(2,"ivey",new Amount(5 )));
@@ -24,6 +24,12 @@ public class ServiceConfig {
         stocks.add(new Stock(6,"branson",new Amount(6 )));
         stocks.add(new Stock(7,"titus", new Amount(4 )));
         return stocks;
+    }
+
+    @Bean
+    public Stock newStock(){
+        Stock newStock = new Stock(0,"ferguson", new Amount(0));
+        return newStock;
     }
 
 
